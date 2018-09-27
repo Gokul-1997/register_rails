@@ -1,0 +1,57 @@
+<!--html lang="en">
+
+<head>
+  <title>Register page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<body-->
+
+<div class="row">
+
+
+<div class="col-md-4" style="text-align: center;"> 
+ <h2 >Register</h2>
+ <%= form_for :user,url: { action: "reg" },method: :post do |f| %>
+  <div class="form-group">
+     
+  <%= f.label :name %><br>
+  <%= f.text_field :name, class: "shortInput" %>
+
+  </div>
+
+  <div class="form-group">
+     <%= f.label :email %><br>
+  <%= f.text_field :email, class: "shortInput" %> 
+
+  </div>
+
+  <div class="form-group">
+      <%= f.label :password %><br>
+  <%= f.text_field :password, class: "shortInput" %> 
+
+  </div>
+
+  <div class="form-group">
+   <%= f.label :dob %><br>
+  <%= f.text_field :dob, class: "shortInput" %> 
+
+  </div>
+
+  <div class="form-group">
+     <%= f.label :phone_no %><br>
+  <%= f.text_field :phone_no, class: "shortInput" %> 
+
+  </div>
+ <%= f.submit "Create account", class: "button createAccount" %>  
+   <% end %>
+</div>
+
+</div>
+<!--/body>
+</html-->

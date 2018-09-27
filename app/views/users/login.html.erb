@@ -1,0 +1,28 @@
+
+<div class="row">
+
+<div class="col-md-4"></div>
+
+<div class="col-md-4" style="text-align: center;"> 
+ <h2 >Login</h2>
+ <%= form_for :user,url: { action: "demo" },method: :post do |f| %>
+  
+
+  <div class="form-group">
+     <%= f.label :email %><br>
+  <%= f.text_field :email, class: "shortInput" %> <br />
+
+  </div>
+
+  <div class="form-group">
+      <%= f.label :password %><br>
+  <%= f.text_field :password, class: "shortInput" %> <br />
+
+  </div>
+
+ 
+ <%= f.submit "login", class: "button createAccount" %>  
+   <% end %>
+</div>
+
+</div>
